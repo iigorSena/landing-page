@@ -11,17 +11,16 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    animation: scroll 10s linear infinite;
+    animation: scroll 15s linear infinite;
   }
 
   .carousel-item {
-    min-width: 15%;
     height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: 0px;
     border: 0px;
-    padding: 0px;
+    padding-inline: 100px;
   }
 
   .carousel img {
