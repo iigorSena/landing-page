@@ -1,0 +1,137 @@
+@media (max-width: 900px) {
+    header {
+        height: 290px;
+    }
+    .header-container {
+        position: relative; /* Necessário para permitir que elementos filhos sejam posicionados */
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Evita que elementos saiam do contêiner */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #area-img_cabecalho {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #img-painel-faixa-superior {
+        margin-left: 0px;
+        margin-right:20px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #area_faixa-texto {
+        width: 100%;
+        position: absolute; /* Garante que o texto fique sobre a imagem */
+        top: 80%; /* Centraliza verticalmente */
+        left: 30%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+        color: white;
+        text-align: center;
+        z-index: 2; /* Garante que o texto fique acima da imagem */
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para legibilidade */
+        padding: 20px;
+        border-radius: 10px; /* Adiciona bordas arredondadas */
+    }
+
+    #h1-cabecalho{
+        font-size: 15pt;
+        
+    }
+    #h2-cabecalho{
+        font-size: 12pt;
+    }
+
+    .section-title{
+        font-size: 18pt;
+    }
+
+    .card {
+        width: 40vw;
+        height: 30vh;
+    }
+    .card_area_img{
+        width: 100%;
+        height: 60%;
+
+    }
+    .card_area_text{
+        height: 40%;
+        text-align: center;
+        font-size: 15pt;
+    }
+    #area-quem_somos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-inline: 10px;
+    }
+    #area-cards_quem_somos{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 20px;
+        overflow: hidden;
+    }
+    #area-txt_quem_somos{
+        width: 100%;
+        text-align: right;
+        font-size: 14pt;
+    }
+
+    #section-clientes{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-contato {
+        background-color: black;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 0px;
+        overflow: hidden;
+    }
+    #area-txt_contato{
+        padding-top: 15px;
+        width: 95%;
+    }
+    #text-contato1{
+        font-size: 15pt;
+        font-weight: bold;
+    }
+    .text-contato{
+        font-size: 14pt;
+    }
+    hr{
+        width: 100%;
+        margin-block:10px;
+        border: 1px solid #d91ff1
+    }
+    #area-btn_contato{
+        width: 80%;
+        height: 100%;
+    }
+    #btn-wpp {
+        font-size: 15pt;
+    }
+}
