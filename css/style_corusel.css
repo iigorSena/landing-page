@@ -8,9 +8,10 @@
 
 .carousel-track {
   display: flex;
-  gap: 10px;
+  gap: 9px;
   align-items: center;
   animation: scroll 15s linear infinite;
+  width: max-content; 
 }
 
 .carousel-item {
@@ -19,7 +20,7 @@
   justify-content: center;
   margin: 0px;
   border: 0px;
-  padding-inline: 100px;
+  padding-inline: 50px;
 }
 
 .carousel img {
@@ -33,7 +34,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-50% - 10px));
   }
 }
 
@@ -56,7 +57,7 @@
   }
 
   .carousel img {
-    height: 12vh;
+    height: 10vh;
     display: block;
     margin: 0 0px;
   }
