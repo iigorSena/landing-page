@@ -70,7 +70,7 @@ header .header-background img {
 }
 .card {
     width: 12vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: top;
