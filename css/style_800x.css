@@ -134,4 +134,31 @@
     #btn-wpp {
         font-size: 15pt;
     }
+    
+    .accordion {
+        flex-direction: column; /* Itens empilhados na vertical */
+        height: auto; /* Altura ajustável */
+        gap: 10px; /* Reduz espaço entre os itens */
+    }
+    .accordion li {
+        flex: none; /* Remover flexibilidade horizontal */
+        height: 80px; /* Altura padrão dos itens */
+        overflow: hidden; /* Oculta conteúdo extra */
+        transition: height 0.3s ease-in-out; /* Animação suave na altura */
+        border-radius: 20px; /* Ajusta bordas para telas menores */
+    }
+    .accordion li img {
+        height: 400px; /* Garante que a imagem se ajuste à nova altura */
+        width: auto; /* Mantém proporção da imagem */
+    }
+    .accordion li:hover {
+        height: 300px; /* Expande o item na vertical ao passar o mouse */
+        z-index: 10; /* Garante que o item fique sobre os outros */
+    }
+    .accordion li .content {
+        opacity: 1; /* Revela o conteúdo no hover */
+        visibility: visible; /* Garante que o conteúdo seja exibido */
+        height: auto; /* Permite que o conteúdo se ajuste ao item */
+    }
+
 }
